@@ -1,0 +1,50 @@
+/* Clients */
+
+.clients {
+  padding: 60px 0;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -15px;
+  padding: 0;
+  align-items: center;
+  padding: 0;
+}
+
+.clients-item {
+  margin: 15px;
+  flex-basis: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: $tablet-width) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $IconColor;
+
+  transition: color 250ms $trans-duration;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.icon-client {
+  fill: currentColor;
+}

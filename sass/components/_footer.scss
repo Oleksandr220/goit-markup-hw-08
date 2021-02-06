@@ -1,0 +1,136 @@
+/* Footer */
+
+footer {
+  background-color: $DarkBgColor;
+
+  padding: 60px 0px;
+
+  & .social-link {
+    background-color: $FooterIconColor;
+    color: $text-color-snow;
+
+    transition: color 250ms $trans-duration,
+      background-color 250ms $trans-duration;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.footer-block {
+  text-align: center;
+
+  @media screen and (min-width: $desktop_width) {
+    display: flex;
+    align-items: baseline;
+    width: 1170px;
+    text-align: start;
+  }
+}
+
+.address {
+  font-style: inherit;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop_width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 70px;
+    font-style: inherit;
+  }
+}
+
+.legal-address {
+  display: block;
+  color: $text-color-snow;
+  margin-bottom: 9px;
+  font-size: $PrimeryTextSize;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-link {
+  display: block;
+  color: $addres-link-color;
+  margin-bottom: 9px;
+  font-size: $PrimeryTextSize;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms $trans-duration;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+@media screen and (min-width: $desktop_width) {
+  .address-link:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accession-title {
+  font-weight: $PrimeryFontWeight;
+  font-size: $PrimeryTextSize;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $text-color-snow;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.accession {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accession-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.accession-item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.accession-icon {
+  fill: currentColor;
+}
+
+.connect-forus {
+  margin-bottom: 60px;
+}
+
+.sub-footer {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop_width) {
+    align-items: baseline;
+    align-content: flex-start;
+  }
+}
+
+.form-conteiner {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}

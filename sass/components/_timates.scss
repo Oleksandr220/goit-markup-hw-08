@@ -1,0 +1,105 @@
+.team {
+  background-color: $SecondoryBgColor;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-list {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    align-items: center;
+    margin: -15px;
+  }
+}
+
+.team-item {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+
+  border: 0px solid transparent;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: $WhiteBgColor;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 15px;
+  }
+}
+
+.team-pages {
+  margin-bottom: 30px;
+}
+
+.social-list {
+  padding: 0;
+}
+
+.timate-name {
+  color: $primery-text-color;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-weight: $SecondoryFontWeight;
+  font-size: $SecondoryTextSize;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.profession {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  color: $sec-text-color;
+  font-size: $SecondoryTextSize;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: $IconColor;
+  background-color: $text-color-snow;
+
+  transition: color 250ms $trans-duration,
+    background-color 250ms $trans-duration;
+
+  &:hover,
+  &:focus {
+    color: $text-color-snow;
+    background-color: $accent-color;
+  }
+}
+
+.social-icon {
+  fill: currentColor;
+}

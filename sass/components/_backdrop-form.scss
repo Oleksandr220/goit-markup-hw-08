@@ -1,0 +1,146 @@
+/* Form backdrop*/
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-weight: $PrimeryFontWeight;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-info {
+  display: block;
+  min-width: 370px;
+  min-height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms $trans-duration;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.field {
+  position: relative;
+  padding-top: 18px;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $sec-text-color;
+  cursor: pointer;
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.comment-area {
+  resize: none;
+  width: 370px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms $trans-duration;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+.field-checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-checkbox {
+  position: relative;
+  padding-left: 22px;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $sec-text-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    transform: translateY(-50%);
+    background-color: $WhiteBgColor;
+    background-image: url(../images/icon-check-black.svg);
+    border-radius: 2px;
+
+    transition: background-color 250ms $trans-duration;
+  }
+}
+
+.checkbox:checked + .text-checkbox::after {
+  background-image: url(../images/icon-check.svg);
+  background-color: $accent-color;
+}
+
+.politic-link {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transform: translateY(100%);
+  fill: $primery-text-color;
+
+  transition: fill 250ms $trans-duration;
+}
+
+.input-info:focus + .form-icon {
+  fill: $accent-color;
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

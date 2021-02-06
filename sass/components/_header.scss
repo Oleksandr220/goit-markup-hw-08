@@ -1,0 +1,14 @@
+/* HEADER */
+
+.page-header {
+  background-color: $WhiteBgColor;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $tablet-width) {
+    & .conteiner {
+      display: flex;
+      align-items: center;
+      padding: 0px 15px 0px 15px;
+    }
+  }
+}

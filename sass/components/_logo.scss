@@ -1,0 +1,21 @@
+/*логотип*/
+
+.logo {
+  display: inline-block;
+  font-family: Raleway, sens-serif;
+  color: $accent-color;
+  font-weight: $PrimeryFontWeight;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: $text-heder-logo-color;
+}
+
+.logo-footer {
+  display: inline-block;
+  color: $text-color-snow;
+  margin-bottom: 20px;
+}
