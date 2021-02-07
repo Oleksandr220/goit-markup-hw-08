@@ -26,8 +26,8 @@
   padding: 40px;
   transform: translate(-50%, -50%);
 
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   border-radius: 4px;
 
   background-color: $WhiteBgColor;

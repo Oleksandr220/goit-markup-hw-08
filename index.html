@@ -6,7 +6,7 @@
     <title>Main</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body document.body>
     <header class="page-header">
       <div class="conteiner">
         <a class="logo" href="index.html"
@@ -102,7 +102,13 @@
       <section class="hero">
         <div class="overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button" data-modal-open>
+          <button
+            type="button"
+            class="button"
+            data-modal-open
+            id="show"
+            onclick="showDialog()"
+          >
             Заказать услугу
           </button>
         </div>
@@ -607,7 +613,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal id="dialog">
       <div class="modal">
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form">
@@ -667,7 +673,13 @@
             <button class="button" type="submit">Отправить</button>
           </div>
         </form>
-        <button type="button" class="close-modal" data-modal-close>
+        <button
+          type="button"
+          class="close-modal"
+          data-modal-close
+          id="close"
+          onclick="closeDialog()"
+        >
           <svg class="close-window" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
@@ -675,6 +687,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
       const setup = name => {
         const backdrop = document.querySelector(`[data-backdrop-${name}]`);
