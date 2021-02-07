@@ -35,6 +35,7 @@ footer {
   margin-bottom: 60px;
 
   @media screen and (min-width: $desktop_width) {
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -115,6 +116,10 @@ footer {
 
 .connect-forus {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop_width) {
+    margin-bottom: 0;
+  }
 }
 
 .sub-footer {

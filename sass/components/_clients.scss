@@ -2,6 +2,10 @@
 
 .clients {
   padding: 60px 0;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0;
+  }
 }
 .clients-list {
   display: flex;
@@ -42,6 +46,10 @@
   &:focus {
     color: $accent-color;
     border-color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 90px;
   }
 }
 

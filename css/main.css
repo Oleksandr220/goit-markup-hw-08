@@ -550,6 +550,9 @@ body {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .nav-link.contacts {
     margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
   .nav-link.contacts:not(:last-child) {
     margin-right: 30px;
@@ -820,6 +823,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .specifications-title {
+    text-align: start;
+  }
+}
+
 .specifications-text {
   color: #757575;
   margin: 0;
@@ -892,6 +901,12 @@ body {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team-list {
@@ -1013,6 +1028,12 @@ body {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,6 +1093,12 @@ body {
   border-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .client-link {
+    height: 90px;
+  }
+}
+
 .icon-client {
   fill: currentColor;
 }
@@ -1117,6 +1144,7 @@ footer .social-link:hover, footer .social-link:focus {
 
 @media screen and (min-width: 1200px) {
   .address {
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1213,6 +1241,12 @@ footer .social-link:hover, footer .social-link:focus {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .connect-forus {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .sub-footer {
     display: -webkit-box;
@@ -1276,6 +1310,14 @@ footer .social-link:hover, footer .social-link:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .button-filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .filters-item {
   margin-right: 8px;
 }
@@ -1334,12 +1376,24 @@ footer .social-link:hover, footer .social-link:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin: -15px;
+  }
+}
+
 .projects-items {
   background-color: #ffffff;
 }
 
 .projects-items:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-items:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1642,7 +1696,7 @@ footer .social-link:hover, footer .social-link:focus {
 }
 
 .menu-header {
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 10;
   top: 0;

@@ -3,6 +3,10 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0;
+  }
 }
 
 .team-list {
