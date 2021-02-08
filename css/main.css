@@ -701,6 +701,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
 }
 
 .header-button.close:hover, .header-button.close:focus {
@@ -716,6 +717,7 @@ body {
   border: none;
   background-color: transparent;
   fill: currentColor;
+  cursor: pointer;
 }
 
 .header-button:hover, .header-button:focus {
@@ -1284,6 +1286,13 @@ footer .social-link:hover, footer .social-link:focus {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .button-filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1367,12 +1376,15 @@ footer .social-link:hover, footer .social-link:focus {
 
 @media screen and (min-width: 768px) {
   .projects {
-    margin: -30px;
+    margin: -15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1393,6 +1405,14 @@ footer .social-link:hover, footer .social-link:focus {
 @media screen and (min-width: 1200px) {
   .projects-items:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-items {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 

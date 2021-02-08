@@ -3,6 +3,11 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-filters {
@@ -75,9 +80,10 @@
   padding: 0;
 
   @media screen and (min-width: $tablet-width) {
-    margin: -30px;
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -94,6 +100,11 @@
     @media screen and (min-width: $desktop-width) {
       margin-bottom: 15px;
     }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 
