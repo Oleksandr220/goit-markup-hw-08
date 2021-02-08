@@ -1842,6 +1842,7 @@ footer .social-link:hover, footer .social-link:focus {
   .footer-form {
     width: 570px;
     height: 86px;
+    text-align: start;
   }
 }
 

@@ -1,8 +1,5 @@
 /* Footer form */
 
-@media screen and (min-width: $desktop_width) {
-}
-
 .form-conteiner {
   position: relative;
   margin-left: auto;
@@ -15,14 +12,15 @@
     width: $mobile-width;
   }
 
-  @media screen and (min-width: $desktop_width) {
+  @media screen and (min-width: $desktop-width) {
     width: 570px;
     height: 86px;
+    text-align: start;
   }
 }
 
 .sign-conteiner {
-  @media screen and (min-width: $desktop_width) {
+  @media screen and (min-width: $desktop-width) {
     display: flex;
   }
 }
