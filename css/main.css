@@ -1312,18 +1312,13 @@ footer .social-link:hover, footer .social-link:focus {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 0;
     text-align: center;
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .button-filters {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1388,12 +1383,6 @@ footer .social-link:hover, footer .social-link:focus {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .projects {
-    margin: -15px;
-  }
-}
-
 .projects-items {
   background-color: #ffffff;
 }
@@ -1413,6 +1402,13 @@ footer .social-link:hover, footer .social-link:focus {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-items {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
