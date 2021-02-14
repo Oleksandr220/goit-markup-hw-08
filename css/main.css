@@ -1712,20 +1712,30 @@ footer .social-link:hover, footer .social-link:focus {
 }
 
 .menu-header {
-  position: fixed;
   display: none;
-  z-index: 10;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100vh;
   height: 100%;
+  padding: 48px 40px;
   background-color: #ffffff;
   overflow-y: scroll;
+  z-index: 3;
 }
 
 .menu-header.backdrop--hidden {
-  display: block;
-  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-list {
@@ -1740,10 +1750,6 @@ footer .social-link:hover, footer .social-link:focus {
 
 .menu-item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.menu-item:last-child {
-  margin-bottom: 302px;
 }
 
 .menu-link {
@@ -1782,12 +1788,24 @@ footer .social-link:hover, footer .social-link:focus {
   color: #2196f3;
 }
 
+.menu-contacts {
+  padding: 0;
+  margin: 0;
+}
+
 .menu-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .menu-social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .social-page {
